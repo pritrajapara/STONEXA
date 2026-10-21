@@ -1,0 +1,993 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>STONEXA Premium Tiles | Luxury Tiles Trading Brand</title>
+  <meta name="description" content="STONEXA Premium Tiles is an international luxury tiles trading brand showcasing world-class Italian marble finish slabs, vitrified tiles, step risers, and decorative poster tiles.">
+  <meta name="referrer" content="no-referrer">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* -------------------------------------------------- */
+    /* LUXURY DESIGN SYSTEM (ALWAYS VISIBLE & SAFE)       */
+    /* -------------------------------------------------- */
+    :root {
+      --color-gold: #D4AF37;
+      --color-gold-light: #FCE881;
+      --color-gold-dark: #B8860B;
+      --color-bg-dark: #0A0B0D;
+      --color-bg-card: #121316;
+      --color-bg-charcoal: #1E2025;
+      --color-text-main: #F8F9FA;
+      --color-text-muted: #A0A5B1;
+      --color-border-gold: rgba(212, 175, 55, 0.35);
+      --font-serif-luxury: 'Cinzel', serif;
+      --font-sans-luxury: 'Montserrat', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      background-color: var(--color-bg-dark);
+      color: var(--color-text-main);
+      font-family: var(--font-sans-luxury);
+      font-size: 16px;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--color-bg-dark);
+      color: var(--color-text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    a, button { touch-action: manipulation; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; object-fit: cover; background: #1a1c22; }
+
+    /* ALL CONTENT VISIBLE BY DEFAULT */
+    .reveal {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    /* Floating Emblem Animation */
+    .floating-logo {
+      animation: floatAnim 4s ease-in-out infinite alternate;
+    }
+    @keyframes floatAnim {
+      0% { transform: translateY(0); filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.3)); }
+      100% { transform: translateY(-10px); filter: drop-shadow(0 0 30px rgba(212, 175, 55, 0.6)); }
+    }
+
+    /* Gold Shimmer Button */
+    .btn-gold {
+      position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 0.75rem;
+      padding: 0.95rem 2rem; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.15em;
+      text-transform: uppercase; color: #0A0B0D;
+      background: linear-gradient(135deg, #FCE881 0%, #D4AF37 50%, #B8860B 100%);
+      border-radius: 4px; box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35); transition: all 0.3s ease;
+      overflow: hidden; z-index: 1;
+    }
+    .btn-gold::before {
+      content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.7), transparent);
+      transition: 0.6s ease; z-index: -1;
+    }
+    .btn-gold:hover::before { left: 100%; }
+    .btn-gold:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(212, 175, 55, 0.5); }
+
+    .btn-outline-gold {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.75rem;
+      padding: 0.95rem 2rem; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--color-gold); background: rgba(18, 19, 22, 0.7);
+      border: 1px solid var(--color-gold); border-radius: 4px; transition: all 0.3s ease;
+    }
+    .btn-outline-gold:hover { background: var(--color-gold); color: #0A0B0D; transform: translateY(-3px); box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3); }
+
+    /* Layout Containers */
+    .container { width: 100%; max-width: 1440px; margin: 0 auto; padding: 0 1.25rem; }
+    @media (min-width: 768px) { .container { padding: 0 2rem; } }
+
+    .section-padding { padding: 4.5rem 0; }
+    @media (min-width: 992px) { .section-padding { padding: 7rem 0; } }
+
+    .section-header { text-align: center; max-width: 800px; margin: 0 auto 3.5rem auto; }
+    .section-tag {
+      display: inline-block; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.25em;
+      text-transform: uppercase; color: var(--color-gold); margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-family: var(--font-serif-luxury); font-size: 2.2rem; font-weight: 700;
+      line-height: 1.2; margin-bottom: 0.85rem; color: #FFFFFF;
+    }
+    .section-subtitle { font-size: 1rem; color: var(--color-text-muted); font-weight: 300; line-height: 1.7; }
+
+    @media (min-width: 768px) {
+      .section-title { font-size: 3.2rem; }
+      .section-subtitle { font-size: 1.1rem; }
+    }
+
+    /* Header Navbar */
+    .header-navbar {
+      position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; padding: 0.85rem 0;
+      background: rgba(10, 11, 13, 0.96); backdrop-filter: blur(15px); border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    }
+    .nav-container { display: flex; align-items: center; justify-content: space-between; }
+    .brand-logo svg { height: 38px; width: auto; display: block; }
+    .nav-menu { display: flex; align-items: center; gap: 1.6rem; list-style: none; }
+    .nav-link { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255, 255, 255, 0.85); transition: color 0.3s ease; }
+    .nav-link:hover { color: var(--color-gold); }
+    .mobile-toggle { display: none; font-size: 1.5rem; color: var(--color-gold); padding: 0.3rem; }
+
+    @media (max-width: 992px) {
+      .nav-menu {
+        position: fixed; top: 0; right: -100%; width: 85%; max-width: 320px; height: 100vh; height: 100dvh;
+        background: #0A0B0D; border-left: 1px solid var(--color-border-gold);
+        flex-direction: column; justify-content: center; align-items: center; gap: 2rem; transition: right 0.4s ease; z-index: 1001;
+      }
+      .nav-menu.open { right: 0; }
+      .mobile-toggle { display: block; }
+    }
+
+    /* Hero Section */
+    .hero-section {
+      position: relative; min-height: 100vh; min-height: 100dvh; display: flex; align-items: center; justify-content: center; padding-top: 6rem; padding-bottom: 4rem; overflow: hidden;
+    }
+    .hero-bg-wrap { position: absolute; inset: 0; z-index: -2; }
+    .hero-bg-img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4) contrast(1.1); }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,11,13,0.5) 0%, rgba(10,11,13,0.95) 100%); z-index: -1; }
+    .hero-content { text-align: center; max-width: 850px; margin: 0 auto; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.4rem 1.2rem; background: rgba(212, 175, 55, 0.12); border: 1px solid var(--color-border-gold); border-radius: 50px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-gold); margin-bottom: 1.5rem; }
+    .hero-title { font-family: var(--font-serif-luxury); font-size: 2.5rem; font-weight: 700; line-height: 1.15; margin-bottom: 1.5rem; color: #FFF; }
+    .hero-title span { color: var(--color-gold); background: linear-gradient(135deg, #FFF3A7 0%, #D4AF37 60%, #A48118 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero-subtitle { font-size: 1.05rem; color: var(--color-text-muted); max-width: 680px; margin: 0 auto 2.5rem auto; line-height: 1.7; }
+    .hero-buttons { display: flex; align-items: center; justify-content: center; gap: 1.25rem; flex-wrap: wrap; }
+
+    @media (min-width: 768px) {
+      .hero-title { font-size: 4.2rem; }
+      .hero-subtitle { font-size: 1.2rem; }
+    }
+
+    /* Categories Grid */
+    .categories-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+    @media (min-width: 992px) { .categories-grid { grid-template-columns: repeat(3, 1fr); gap: 2.5rem; } }
+    .category-card {
+      position: relative; height: 420px; border-radius: 16px; overflow: hidden;
+      border: 1px solid rgba(212, 175, 55, 0.25); background: var(--color-bg-card); transition: all 0.4s ease; cursor: pointer;
+    }
+    .category-card-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+    .category-card-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,11,13,0.95) 0%, transparent 60%); }
+    .category-card-content { position: absolute; bottom: 0; left: 0; width: 100%; padding: 2rem; z-index: 2; }
+    .category-tag { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.2em; color: var(--color-gold); text-transform: uppercase; margin-bottom: 0.4rem; display: block; }
+    .category-title { font-family: var(--font-serif-luxury); font-size: 1.8rem; font-weight: 700; color: #FFF; margin-bottom: 0.6rem; }
+    .category-desc { font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.25rem; }
+    .category-btn { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--color-gold); }
+    .category-card:hover { transform: translateY(-6px); border-color: var(--color-gold); box-shadow: 0 15px 35px rgba(212, 175, 55, 0.25); }
+    .category-card:hover .category-card-img { transform: scale(1.06); }
+
+    /* Tiles Collection Alternating Rows */
+    .tiles-grid-showcase { display: flex; flex-direction: column; gap: 3rem; }
+    .tile-category-row {
+      display: grid; grid-template-columns: 1fr; gap: 2rem; padding: 1.75rem;
+      background: rgba(18, 19, 22, 0.8); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; transition: all 0.4s ease;
+    }
+    .tile-category-row:hover { border-color: var(--color-border-gold); box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6); }
+
+    @media (min-width: 992px) {
+      .tiles-grid-showcase { gap: 4.5rem; }
+      .tile-category-row { grid-template-columns: 1fr 1fr; gap: 3.5rem; padding: 2.5rem; }
+      .tile-category-row:nth-child(even) { direction: rtl; }
+      .tile-category-row:nth-child(even) .tile-row-content { direction: ltr; }
+    }
+    .tile-row-img-wrap { position: relative; height: 260px; border-radius: 14px; overflow: hidden; border: 1px solid rgba(212, 175, 55, 0.2); }
+    @media (min-width: 992px) { .tile-row-img-wrap { height: 360px; } }
+    .tile-row-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+    .tile-category-row:hover .tile-row-img-wrap img { transform: scale(1.06); }
+    .tile-row-title { font-family: var(--font-serif-luxury); font-size: 2rem; font-weight: 700; color: #FFF; margin-bottom: 0.6rem; }
+    .tile-specs-list { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1rem 0; list-style: none; }
+    .tile-spec-pill { padding: 0.35rem 0.85rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; font-size: 0.8rem; color: #FFF; display: flex; align-items: center; gap: 0.4rem; }
+    .tile-spec-pill i { color: var(--color-gold); }
+
+    /* Banners */
+    .feature-split-banner { border-radius: 24px; overflow: hidden; border: 1px solid var(--color-border-gold); background: var(--color-bg-card); }
+    .banner-grid { display: grid; grid-template-columns: 1fr; }
+    @media (min-width: 992px) { .banner-grid { grid-template-columns: 1fr 1fr; } }
+    .banner-img-side { height: 280px; }
+    @media (min-width: 992px) { .banner-img-side { height: 480px; } }
+    .banner-img-side img { width: 100%; height: 100%; object-fit: cover; }
+    .banner-content-side { padding: 2.2rem 1.5rem; display: flex; flex-direction: column; gap: 1.1rem; }
+    @media (min-width: 992px) { .banner-content-side { padding: 3.5rem; gap: 1.3rem; } }
+    .banner-title { font-family: var(--font-serif-luxury); font-size: 2.2rem; font-weight: 700; }
+    .banner-list { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+    .banner-list li { display: flex; align-items: center; gap: 0.65rem; color: var(--color-text-muted); font-size: 0.95rem; }
+    .banner-list li i { color: var(--color-gold); }
+
+    /* Inspiration Tabs & Grid */
+    .room-tabs-nav { display: flex; align-items: center; justify-content: center; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 3rem; }
+    .room-tab-btn { padding: 0.65rem 1.4rem; background: rgba(18, 19, 22, 0.8); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; font-size: 0.82rem; font-weight: 600; color: var(--color-text-muted); transition: all 0.3s ease; }
+    .room-tab-btn:hover, .room-tab-btn.active { background: var(--color-gold); color: #0A0B0D; border-color: var(--color-gold); box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3); }
+    .room-showcase-grid { display: grid; grid-template-columns: 1fr; gap: 1.75rem; }
+    @media (min-width: 600px) { .room-showcase-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 992px) { .room-showcase-grid { grid-template-columns: repeat(3, 1fr); } }
+
+    /* Gallery Grid & Lightbox */
+    .gallery-filter-bar { display: flex; justify-content: center; gap: 0.75rem; margin-bottom: 3rem; flex-wrap: wrap; }
+    .filter-btn { padding: 0.6rem 1.5rem; background: rgba(18, 19, 22, 0.8); border: 1px solid rgba(212, 175, 55, 0.25); border-radius: 4px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: var(--color-text-muted); transition: all 0.3s ease; }
+    .filter-btn:hover, .filter-btn.active { background: var(--color-gold); color: #0A0B0D; border-color: var(--color-gold); }
+
+    .gallery-masonry-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
+    .gallery-item { position: relative; border-radius: 14px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.08); background: var(--color-bg-card); cursor: pointer; height: 280px; transition: all 0.4s ease; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+    .gallery-item-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,11,13,0.92) 0%, transparent 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.25rem; }
+    .gallery-item-title { font-family: var(--font-serif-luxury); font-size: 1.05rem; color: #FFF; }
+    .gallery-item:hover { transform: translateY(-6px); border-color: var(--color-gold); box-shadow: 0 15px 35px rgba(212, 175, 55, 0.25); }
+    .gallery-item:hover img { transform: scale(1.06); }
+
+    /* Lightbox Modal */
+    .lightbox-modal { position: fixed; inset: 0; z-index: 10000; background: rgba(10, 11, 13, 0.96); backdrop-filter: blur(25px); display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: all 0.3s ease; }
+    .lightbox-modal.active { opacity: 1; visibility: visible; }
+    .lightbox-close-btn { position: absolute; top: 1.5rem; right: 1.5rem; font-size: 2.2rem; color: var(--color-gold); cursor: pointer; z-index: 10002; }
+    .lightbox-nav-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; border-radius: 50%; background: rgba(18, 19, 22, 0.85); border: 1px solid var(--color-gold); color: var(--color-gold); font-size: 1.3rem; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10002; }
+    .lightbox-nav-btn.prev { left: 1rem; } .lightbox-nav-btn.next { right: 1rem; }
+    .lightbox-content-wrap { max-width: 90%; max-height: 85vh; display: flex; flex-direction: column; align-items: center; text-align: center; }
+    .lightbox-img { max-width: 100%; max-height: 60vh; object-fit: contain; border-radius: 8px; border: 1px solid var(--color-border-gold); }
+
+    /* Why Choose & Stats */
+    .reasons-grid { display: grid; grid-template-columns: 1fr; gap: 1.75rem; }
+    @media (min-width: 600px) { .reasons-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 992px) { .reasons-grid { grid-template-columns: repeat(3, 1fr); } }
+    .reason-card { padding: 2rem; background: var(--color-bg-card); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; transition: all 0.4s ease; }
+    .reason-card:hover { transform: translateY(-6px); border-color: var(--color-gold); box-shadow: 0 15px 35px rgba(212, 175, 55, 0.2); }
+    .reason-icon { width: 52px; height: 52px; border-radius: 12px; background: rgba(212, 175, 55, 0.12); border: 1px solid var(--color-border-gold); color: var(--color-gold); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.25rem; }
+    .reason-title { font-family: var(--font-serif-luxury); font-size: 1.3rem; color: #FFF; margin-bottom: 0.6rem; }
+
+    .stats-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 4rem; padding: 2.5rem 1.5rem; background: rgba(18, 19, 22, 0.9); border: 1px solid var(--color-border-gold); border-radius: 20px; text-align: center; }
+    @media (min-width: 768px) { .stats-row { grid-template-columns: repeat(4, 1fr); } }
+    .stat-num { font-family: var(--font-serif-luxury); font-size: 3rem; font-weight: 800; color: var(--color-gold); }
+
+    /* Contact Section */
+    .contact-card-wrap { display: grid; grid-template-columns: 1fr; gap: 2.5rem; padding: 2.2rem 1.5rem; background: var(--color-bg-card); border: 1px solid var(--color-border-gold); border-radius: 24px; }
+    @media (min-width: 992px) { .contact-card-wrap { grid-template-columns: 1fr 1fr; padding: 4rem; } }
+    .contact-item { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.5rem; }
+    .contact-icon { width: 52px; height: 52px; border-radius: 50%; background: rgba(212, 175, 55, 0.12); border: 1px solid var(--color-gold); color: var(--color-gold); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; flex-shrink: 0; }
+    .whatsapp-cta-box { padding: 2.5rem 1.5rem; background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(18, 19, 22, 0.85) 100%); border: 1px solid var(--color-gold); border-radius: 20px; text-align: center; }
+
+    /* Footer */
+    .footer-site { background: #060708; border-top: 1px solid rgba(212, 175, 55, 0.2); padding: 4.5rem 0 2rem 0; }
+    .footer-top { display: grid; grid-template-columns: 1fr; gap: 2.5rem; margin-bottom: 3.5rem; }
+    @media (min-width: 768px) { .footer-top { grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 3rem; } }
+    .footer-col-title { font-family: var(--font-serif-luxury); font-size: 1.05rem; color: var(--color-gold); margin-bottom: 1.25rem; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.9rem; }
+    .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.06); padding-top: 1.8rem; font-size: 0.85rem; color: var(--color-text-muted); text-align: center; }
+
+    /* Inquiry Modal */
+    .inquiry-modal { position: fixed; inset: 0; z-index: 10000; background: rgba(10, 11, 13, 0.95); backdrop-filter: blur(20px); display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: all 0.3s ease; padding: 1rem; }
+    .inquiry-modal.active { opacity: 1; visibility: visible; }
+    .inquiry-form-card { width: 100%; max-width: 500px; background: var(--color-bg-card); border: 1px solid var(--color-border-gold); border-radius: 20px; padding: 2rem; position: relative; }
+    .form-input, .form-select, .form-textarea { width: 100%; padding: 0.8rem 1.1rem; background: rgba(10, 11, 13, 0.8); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 6px; color: #FFF; margin-top: 0.4rem; margin-bottom: 1.1rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="header-navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <svg viewBox="0 0 1000 450" width="160">
+          <polygon points="420,25 530,25 530,55 450,55" fill="#D4AF37"/>
+          <text x="500" y="310" text-anchor="middle" font-family="'Cinzel', serif" font-size="70" font-weight="700" fill="#FFF">STONEXA</text>
+          <line x1="200" y1="340" x2="800" y2="340" stroke="#D4AF37" stroke-width="2"/>
+          <text x="500" y="380" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="22" font-weight="600" letter-spacing="20" fill="#D4AF37">PREMIUM TILES</text>
+        </svg>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#featured-categories" class="nav-link">Categories</a></li>
+        <li><a href="#premium-tiles" class="nav-link">Tiles</a></li>
+        <li><a href="#step-riser" class="nav-link">Step Riser</a></li>
+        <li><a href="#poster-tiles" class="nav-link">Poster Tiles</a></li>
+        <li><a href="#inspiration" class="nav-link">Inspiration</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#why-choose" class="nav-link">Why Us</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div style="display:flex; gap:0.75rem; align-items:center;">
+        <a href="https://api.whatsapp.com/send?phone=919876543210&text=Hello%20STONEXA%20Premium%20Tiles" target="_blank" class="btn-gold" style="padding:0.5rem 1.1rem; font-size:0.75rem;">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-wrap">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80" alt="Luxury Tile Villa Interior" class="hero-bg-img" referrerpolicy="no-referrer">
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fa-solid fa-gem"></i> International Tile Trading</div>
+        <h1 class="hero-title">Premium Tiles That Define <span>Every Space</span></h1>
+        <p class="hero-subtitle">Curating world-class vitrified slabs, architectural step risers, and bespoke poster tile murals for luxury residences and grand commercial spaces.</p>
+        <div class="hero-buttons">
+          <a href="#premium-tiles" class="btn-gold">Explore Collection <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" class="btn-outline-gold">Contact Concierge <i class="fa-solid fa-comments"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED CATEGORIES -->
+    <section id="featured-categories" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Curated Portfolio</span>
+          <h2 class="section-title">Master Collections</h2>
+          <p class="section-subtitle">Discover our three core pillars of luxury surface design.</p>
+        </div>
+
+        <div class="categories-grid">
+          <div class="category-card" onclick="document.getElementById('premium-tiles').scrollIntoView({behavior: 'smooth'})">
+            <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1000&q=80" alt="Premium Tiles" class="category-card-img" referrerpolicy="no-referrer">
+            <div class="category-card-overlay"></div>
+            <div class="category-card-content">
+              <span class="category-tag">10 Sub-Categories</span>
+              <h3 class="category-title">Premium Tiles</h3>
+              <p class="category-desc">Marble finish, high gloss slabs, wood textures, and large format tiles.</p>
+              <span class="category-btn">Explore Tiles <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+
+          <div class="category-card" onclick="document.getElementById('step-riser').scrollIntoView({behavior: 'smooth'})">
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1000&q=80" alt="Step Riser" class="category-card-img" referrerpolicy="no-referrer">
+            <div class="category-card-overlay"></div>
+            <div class="category-card-content">
+              <span class="category-tag">Staircase Design</span>
+              <h3 class="category-title">Step Riser</h3>
+              <p class="category-desc">Full body vitrified stair treads with bullnose anti-skid safety edges.</p>
+              <span class="category-btn">Explore Step Risers <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+
+          <div class="category-card" onclick="document.getElementById('poster-tiles').scrollIntoView({behavior: 'smooth'})">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80" alt="Poster Tiles" class="category-card-img" referrerpolicy="no-referrer">
+            <div class="category-card-overlay"></div>
+            <div class="category-card-content">
+              <span class="category-tag">Wall Art Murals</span>
+              <h3 class="category-title">Poster Tiles</h3>
+              <p class="category-desc">Handcrafted ceramic murals, gold leaf carved panels, and agate slabs.</p>
+              <span class="category-btn">Explore Murals <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREMIUM TILES COLLECTION (10 CATEGORIES) -->
+    <section id="premium-tiles" class="section-padding" style="background: rgba(10,11,13,0.5);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Craftsmanship</span>
+          <h2 class="section-title">Premium Tiles Collection</h2>
+          <p class="section-subtitle">Showcasing 10 distinct categories engineered for architectural luxury.</p>
+        </div>
+
+        <div class="tiles-grid-showcase">
+          <!-- 1. Marble Finish -->
+          <div class="tile-category-row">
+            <div class="tile-row-img-wrap"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" alt="Marble Finish" referrerpolicy="no-referrer"></div>
+            <div class="tile-row-content">
+              <h3 class="tile-row-title">Marble Finish Slabs</h3>
+              <p>Italian Statuario, Calacatta Gold, and Nero Marquina aesthetics with zero maintenance.</p>
+              <ul class="tile-specs-list">
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> Sizes: 800x1600mm / 1200x2400mm</li>
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> Mirror Gloss & Bookmatch</li>
+              </ul>
+              <a href="https://api.whatsapp.com/send?phone=919876543210&text=Inquiry%20Marble%20Finish%20Tiles" target="_blank" class="btn-outline-gold">Inquire via WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- 2. Glossy -->
+          <div class="tile-category-row">
+            <div class="tile-row-img-wrap"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80" alt="Glossy Tiles" referrerpolicy="no-referrer"></div>
+            <div class="tile-row-content">
+              <h3 class="tile-row-title">High Gloss Vitrified</h3>
+              <p>Deep crystal glaze technology for reflective penthouses and hotel lobbies.</p>
+              <ul class="tile-specs-list">
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> Nano Polished Gloss</li>
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> Scratch Resistant</li>
+              </ul>
+              <a href="https://api.whatsapp.com/send?phone=919876543210&text=Inquiry%20Glossy%20Tiles" target="_blank" class="btn-outline-gold">Inquire via WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- 3. Matt -->
+          <div class="tile-category-row">
+            <div class="tile-row-img-wrap"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=80" alt="Matt Finish" referrerpolicy="no-referrer"></div>
+            <div class="tile-row-content">
+              <h3 class="tile-row-title">Architectural Satin Matt</h3>
+              <p>Soft tactile matte surfaces for minimal glare and Scandinavian tranquility.</p>
+              <ul class="tile-specs-list">
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> Satin Soft Matt</li>
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> Anti-Glare Surface</li>
+              </ul>
+              <a href="https://api.whatsapp.com/send?phone=919876543210&text=Inquiry%20Matt%20Tiles" target="_blank" class="btn-outline-gold">Inquire via WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- 4. Wooden Finish -->
+          <div class="tile-category-row">
+            <div class="tile-row-img-wrap"><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80" alt="Wooden Finish" referrerpolicy="no-referrer"></div>
+            <div class="tile-row-content">
+              <h3 class="tile-row-title">Wooden Plank Vitrified</h3>
+              <p>Oak, walnut, and teakwood timber textures with 100% water resistance.</p>
+              <ul class="tile-specs-list">
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> 200x1200mm Planks</li>
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> Chevron & Straight</li>
+              </ul>
+              <a href="https://api.whatsapp.com/send?phone=919876543210&text=Inquiry%20Wooden%20Finish%20Tiles" target="_blank" class="btn-outline-gold">Inquire via WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- 5. Parking Tiles -->
+          <div class="tile-category-row">
+            <div class="tile-row-img-wrap"><img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&w=1000&q=80" alt="Parking Tiles" referrerpolicy="no-referrer"></div>
+            <div class="tile-row-content">
+              <h3 class="tile-row-title">Parking & Driveway Pavers</h3>
+              <p>16mm heavy duty vitrified body built for high vehicle load and weather durability.</p>
+              <ul class="tile-specs-list">
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> 16mm Ultra-Thick Body</li>
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> Anti-Skid Punch Texture</li>
+              </ul>
+              <a href="https://api.whatsapp.com/send?phone=919876543210&text=Inquiry%20Parking%20Tiles" target="_blank" class="btn-outline-gold">Inquire via WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- 6. Elevation -->
+          <div class="tile-category-row">
+            <div class="tile-row-img-wrap"><img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1000&q=80" alt="Elevation Tiles" referrerpolicy="no-referrer"></div>
+            <div class="tile-row-content">
+              <h3 class="tile-row-title">3D Elevation Facade</h3>
+              <p>Natural split stone textures and 3D relief tiles for exterior villa facades.</p>
+              <ul class="tile-specs-list">
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> 3D Stone Relief</li>
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> Weatherproof & UV Resistant</li>
+              </ul>
+              <a href="https://api.whatsapp.com/send?phone=919876543210&text=Inquiry%20Elevation%20Tiles" target="_blank" class="btn-outline-gold">Inquire via WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- 7. Bathroom -->
+          <div class="tile-category-row">
+            <div class="tile-row-img-wrap"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=80" alt="Bathroom Tiles" referrerpolicy="no-referrer"></div>
+            <div class="tile-row-content">
+              <h3 class="tile-row-title">Master Spa Bathroom Tiles</h3>
+              <p>Anti-bacterial surfaces with non-slip flooring and serene spa textures.</p>
+              <ul class="tile-specs-list">
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> R10 Anti-Slip Safety</li>
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> Zero Water Absorption</li>
+              </ul>
+              <a href="https://api.whatsapp.com/send?phone=919876543210&text=Inquiry%20Bathroom%20Tiles" target="_blank" class="btn-outline-gold">Inquire via WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- 8. Kitchen -->
+          <div class="tile-category-row">
+            <div class="tile-row-img-wrap"><img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1000&q=80" alt="Kitchen Tiles" referrerpolicy="no-referrer"></div>
+            <div class="tile-row-content">
+              <h3 class="tile-row-title">Kitchen Counter & Backsplash</h3>
+              <p>Stain-proof and heat-resistant vitrified slabs for kitchen waterfalls and backsplashes.</p>
+              <ul class="tile-specs-list">
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> Heat & Stain Proof</li>
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> Food-Grade Non-Porous</li>
+              </ul>
+              <a href="https://api.whatsapp.com/send?phone=919876543210&text=Inquiry%20Kitchen%20Tiles" target="_blank" class="btn-outline-gold">Inquire via WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- 9. Outdoor -->
+          <div class="tile-category-row">
+            <div class="tile-row-img-wrap"><img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1000&q=80" alt="Outdoor Deck Tiles" referrerpolicy="no-referrer"></div>
+            <div class="tile-row-content">
+              <h3 class="tile-row-title">Outdoor Pool Deck Slabs</h3>
+              <p>20mm thick porcelain pavers engineered for swimming pool decks and terraces.</p>
+              <ul class="tile-specs-list">
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> 20mm Extra Thick</li>
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> R11 Wet Anti-Slip</li>
+              </ul>
+              <a href="https://api.whatsapp.com/send?phone=919876543210&text=Inquiry%20Outdoor%20Tiles" target="_blank" class="btn-outline-gold">Inquire via WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- 10. Large Format -->
+          <div class="tile-category-row">
+            <div class="tile-row-img-wrap"><img src="https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?auto=format&fit=crop&w=1000&q=80" alt="Large Format Slabs" referrerpolicy="no-referrer"></div>
+            <div class="tile-row-content">
+              <h3 class="tile-row-title">Monumental Sintered Slabs</h3>
+              <p>Grand 1200x3000mm continuous slabs creating seamless joint-free walls and floors.</p>
+              <ul class="tile-specs-list">
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> 1200x3000mm Scale</li>
+                <li class="tile-spec-pill"><i class="fa-solid fa-circle-check"></i> Joint-Free Expansion</li>
+              </ul>
+              <a href="https://api.whatsapp.com/send?phone=919876543210&text=Inquiry%20Large%20Format%20Tiles" target="_blank" class="btn-outline-gold">Inquire via WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP RISER SECTION -->
+    <section id="step-riser" class="section-padding">
+      <div class="container">
+        <div class="feature-split-banner">
+          <div class="banner-grid">
+            <div class="banner-img-side"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80" alt="Step Riser Staircase" referrerpolicy="no-referrer"></div>
+            <div class="banner-content-side">
+              <span class="section-tag">Dedicated Staircase Series</span>
+              <h2 class="banner-title">Architectural Step Riser Collection</h2>
+              <p>Transform residential duplex and hotel stairwells with precision full body vitrified stair treads featuring bullnose safety edges and matching risers.</p>
+              <ul class="banner-list">
+                <li><i class="fa-solid fa-circle-check"></i> Full body vitrified heavy-footfall durability</li>
+                <li><i class="fa-solid fa-circle-check"></i> Factory machined bullnose safety edges</li>
+                <li><i class="fa-solid fa-circle-check"></i> Integrated anti-skid tread grooves</li>
+              </ul>
+              <div><a href="https://api.whatsapp.com/send?phone=919876543210&text=Inquiry%20Step%20Riser%20Collection" target="_blank" class="btn-gold">Inquire Step Risers <i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POSTER TILES SECTION -->
+    <section id="poster-tiles" class="section-padding" style="background: rgba(10,11,13,0.5);">
+      <div class="container">
+        <div class="feature-split-banner">
+          <div class="banner-grid" style="direction: rtl;">
+            <div class="banner-img-side" style="direction: ltr;"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80" alt="Poster Tiles Mural" referrerpolicy="no-referrer"></div>
+            <div class="banner-content-side" style="direction: ltr;">
+              <span class="section-tag">Decorative Wall Murals</span>
+              <h2 class="banner-title">Handcrafted Wall Poster Art</h2>
+              <p>Elevate plain interior walls into artistic gallery showcases with 24k gold leaf carving, botanical themes, and agate wall panels.</p>
+              <ul class="banner-list">
+                <li><i class="fa-solid fa-circle-check"></i> Multi-slab bookmatched mural sets</li>
+                <li><i class="fa-solid fa-circle-check"></i> Real 24k gold leaf carved highlights</li>
+                <li><i class="fa-solid fa-circle-check"></i> Ideal for living room feature walls & foyers</li>
+              </ul>
+              <div><a href="https://api.whatsapp.com/send?phone=919876543210&text=Inquiry%20Poster%20Tiles%20Collection" target="_blank" class="btn-gold">Inquire Poster Murals <i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSPIRATION SECTION -->
+    <section id="inspiration" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Architectural Lookbook</span>
+          <h2 class="section-title">Inspiration By Space</h2>
+          <p class="section-subtitle">Visualize STONEXA tiles in high-end international spaces.</p>
+        </div>
+        <div id="room-tabs-container" class="room-tabs-nav"></div>
+        <div id="room-showcase-grid" class="room-showcase-grid"></div>
+      </div>
+    </section>
+
+    <!-- PREMIUM 50+ GALLERY SECTION -->
+    <section id="gallery" class="section-padding" style="background: #060708;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">High-Definition Visuals</span>
+          <h2 class="section-title">Premium 50+ Gallery</h2>
+          <p class="section-subtitle">Click any image to open the interactive fullscreen lightbox.</p>
+        </div>
+
+        <div class="gallery-filter-bar">
+          <button class="filter-btn active" data-filter="all">All (50+)</button>
+          <button class="filter-btn" data-filter="tiles">Tiles</button>
+          <button class="filter-btn" data-filter="step-riser">Step Risers</button>
+          <button class="filter-btn" data-filter="poster-tiles">Poster Tiles</button>
+        </div>
+
+        <div id="gallery-grid" class="gallery-masonry-grid"></div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE STONEXA -->
+    <section id="why-choose" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">The Trading Edge</span>
+          <h2 class="section-title">Why Partner With STONEXA</h2>
+          <p class="section-subtitle">We bridge elite international tile designs with reliable trading supply.</p>
+        </div>
+
+        <div class="reasons-grid">
+          <div class="reason-card">
+            <div class="reason-icon"><i class="fa-solid fa-award"></i></div>
+            <h3 class="reason-title">Premium Quality</h3>
+            <p>Strict quality control ensuring 100% first-choice vitrified body and uniform glaze.</p>
+          </div>
+          <div class="reason-card">
+            <div class="reason-icon"><i class="fa-solid fa-gem"></i></div>
+            <h3 class="reason-title">Latest Designs</h3>
+            <p>Continuously updated portfolio reflecting Italian marble veining and modern fluted textures.</p>
+          </div>
+          <div class="reason-card">
+            <div class="reason-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3 class="reason-title">Wide Collection</h3>
+            <p>Over 500+ luxury tile references under one specialized trading roof.</p>
+          </div>
+          <div class="reason-card">
+            <div class="reason-icon"><i class="fa-solid fa-crown"></i></div>
+            <h3 class="reason-title">Affordable Luxury</h3>
+            <p>Direct trading model delivering high-end aesthetics at competitive value.</p>
+          </div>
+          <div class="reason-card">
+            <div class="reason-icon"><i class="fa-solid fa-handshake"></i></div>
+            <h3 class="reason-title">Reliable Partner</h3>
+            <p>Dedicated project advisors and concierge support for architects and home owners.</p>
+          </div>
+          <div class="reason-card">
+            <div class="reason-icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <h3 class="reason-title">Fast Supply</h3>
+            <p>Safe transit packaging and rapid dispatch network directly to your site.</p>
+          </div>
+          <div class="reason-card">
+            <div class="reason-icon"><i class="fa-solid fa-heart"></i></div>
+            <h3 class="reason-title">Customer Satisfaction</h3>
+            <p>Uncompromising commitment with personalized WhatsApp consultation.</p>
+          </div>
+        </div>
+
+        <div class="stats-row">
+          <div><div class="stat-num">500+</div><div style="font-size:0.8rem; text-transform:uppercase; color:var(--color-text-muted);">Tile Designs</div></div>
+          <div><div class="stat-num">100%</div><div style="font-size:0.8rem; text-transform:uppercase; color:var(--color-text-muted);">Quality Inspected</div></div>
+          <div><div class="stat-num">15+</div><div style="font-size:0.8rem; text-transform:uppercase; color:var(--color-text-muted);">Categories</div></div>
+          <div><div class="stat-num">24/7</div><div style="font-size:0.8rem; text-transform:uppercase; color:var(--color-text-muted);">Concierge</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-padding" style="background: rgba(10,11,13,0.8);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Direct Communication</span>
+          <h2 class="section-title">Connect With STONEXA</h2>
+          <p class="section-subtitle">Connect directly with our tile specialists via WhatsApp or phone.</p>
+        </div>
+
+        <div class="contact-card-wrap">
+          <div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <div style="font-size:0.75rem; text-transform:uppercase; color:var(--color-gold);">Phone Consultation</div>
+                <div style="font-size:1.2rem; font-weight:600;"><a href="tel:+919876543210">+91 98765 43210</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <div style="font-size:0.75rem; text-transform:uppercase; color:var(--color-gold);">WhatsApp Concierge</div>
+                <div style="font-size:1.2rem; font-weight:600;"><a href="https://api.whatsapp.com/send?phone=919876543210" target="_blank">+91 98765 43210</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <div style="font-size:0.75rem; text-transform:uppercase; color:var(--color-gold);">Email Inquiry</div>
+                <div style="font-size:1.2rem; font-weight:600;"><a href="mailto:info@stonexatiles.com">info@stonexatiles.com</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="whatsapp-cta-box">
+            <i class="fa-brands fa-whatsapp" style="font-size:3rem; color:#25D366;"></i>
+            <h3 style="font-family:var(--font-serif-luxury); font-size:1.5rem; color:#FFF; margin: 0.85rem 0;">Instant Catalog & WhatsApp Inquiry</h3>
+            <p style="color:var(--color-text-muted); font-size:0.9rem; margin-bottom: 1.25rem;">Send us your blueprints or tile requirements for direct estimates.</p>
+            <div style="display:flex; gap:0.75rem; flex-wrap:wrap; justify-content:center;">
+              <a href="https://api.whatsapp.com/send?phone=919876543210&text=Hello%20STONEXA%20Premium%20Tiles" target="_blank" class="btn-gold">Chat on WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+              <button class="btn-outline-gold open-inquiry-modal">Requirement Form <i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox-modal" class="lightbox-modal">
+    <span class="lightbox-close-btn" id="close-lightbox-btn">&times;</span>
+    <button class="lightbox-nav-btn prev" id="prev-lightbox-btn"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="lightbox-nav-btn next" id="next-lightbox-btn"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="lightbox-content-wrap">
+      <img id="lightbox-img" src="" alt="Tile Lightbox Preview" class="lightbox-img">
+      <div style="margin-top:1.25rem; text-align:center;">
+        <h3 id="lightbox-title" style="font-family:var(--font-serif-luxury); font-size:1.4rem; color:#FFF;">Tile Title</h3>
+        <p id="lightbox-meta" style="font-size:0.85rem; color:var(--color-gold); margin-top:0.3rem;">Tile Meta</p>
+        <a id="lightbox-inquire-btn" href="#" target="_blank" class="btn-gold" style="margin-top:1rem; padding:0.6rem 1.2rem; font-size:0.78rem;">Inquire on WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- INQUIRY FORM MODAL -->
+  <div id="inquiry-modal" class="inquiry-modal">
+    <div class="inquiry-form-card">
+      <span id="close-inquiry-modal" style="position:absolute; top:1.25rem; right:1.25rem; font-size:1.6rem; color:var(--color-gold); cursor:pointer;">&times;</span>
+      <h3 style="font-family:var(--font-serif-luxury); font-size:1.6rem; color:#FFF;">Submit Requirement Inquiry</h3>
+      <form id="direct-inquiry-form" style="margin-top:1rem;">
+        <label style="font-size:0.75rem; text-transform:uppercase; color:var(--color-gold);">Your Name</label>
+        <input type="text" id="inquiry-name" class="form-input" placeholder="Alexander Wright" required>
+
+        <label style="font-size:0.75rem; text-transform:uppercase; color:var(--color-gold);">Phone / WhatsApp</label>
+        <input type="tel" id="inquiry-phone" class="form-input" placeholder="+91 98765 43210" required>
+
+        <label style="font-size:0.75rem; text-transform:uppercase; color:var(--color-gold);">Collection of Interest</label>
+        <select id="inquiry-category" class="form-select">
+          <option>Marble Finish Slabs</option>
+          <option>High Gloss Vitrified</option>
+          <option>Architectural Step Risers</option>
+          <option>Decorative Poster Tiles</option>
+          <option>Complete Villa Project</option>
+        </select>
+
+        <label style="font-size:0.75rem; text-transform:uppercase; color:var(--color-gold);">Requirement Details</label>
+        <textarea id="inquiry-msg" class="form-textarea" rows="3" placeholder="Required sq ft or room details..."></textarea>
+
+        <button type="submit" class="btn-gold" style="width:100%;">Send Direct to WhatsApp <i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-site">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <h3 style="font-family:var(--font-serif-luxury); font-size:1.5rem; color:#FFF; margin-bottom:0.75rem;">STONEXA</h3>
+          <p style="color:var(--color-text-muted); font-size:0.85rem;">Redefining architectural luxury surfaces. STONEXA is an international tile trading brand.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="#premium-tiles">Marble Finish</a></li>
+            <li><a href="#premium-tiles">High Gloss Slabs</a></li>
+            <li><a href="#step-riser">Step Risers</a></li>
+            <li><a href="#poster-tiles">Poster Murals</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#inspiration">Inspiration</a></li>
+            <li><a href="#gallery">50+ Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Direct Concierge</h4>
+          <p style="color:var(--color-text-muted); font-size:0.85rem;">WhatsApp: +91 98765 43210<br>Email: info@stonexatiles.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 STONEXA Premium Tiles. All Rights Reserved. Luxury Tile Trading Brand.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE-SAFE JAVASCRIPT ENGINE -->
+  <script>
+    // 50+ Real High-Resolution Architectural Photo URLs
+    const UNSPLASH_PHOTOS = [
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1600573472591-ee6b81645a4a?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80',
+      'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1000&q=80'
+    ];
+
+    const STONEXA_GALLERY = [];
+    const categories = ['tiles', 'step-riser', 'poster-tiles'];
+    const subCategories = ['Marble Finish', 'High Gloss Slabs', 'Step Riser', 'Decorative Murals', 'Satin Matt'];
+    const rooms = ['Villa', 'Living Room', 'Hotel', 'Bathroom', 'Kitchen', 'Bedroom', 'Office'];
+
+    for (let i = 0; i < 52; i++) {
+      const imgUrl = UNSPLASH_PHOTOS[i % UNSPLASH_PHOTOS.length];
+      const cat = categories[i % 3];
+      STONEXA_GALLERY.push({
+        id: `tile-${i + 1}`,
+        title: `STONEXA Luxury Design No. ${101 + i}`,
+        category: cat,
+        subCategory: subCategories[i % subCategories.length],
+        size: '1200x2400 mm',
+        finish: 'Mirror Finish Slabs',
+        room: rooms[i % rooms.length],
+        imageUrl: imgUrl
+      });
+    }
+
+    const STONEXA_ROOMS = [
+      { id: 'all', name: 'All Spaces' },
+      { id: 'Living Room', name: 'Living Room' },
+      { id: 'Kitchen', name: 'Kitchen' },
+      { id: 'Bathroom', name: 'Bathroom' },
+      { id: 'Bedroom', name: 'Bedroom' },
+      { id: 'Office', name: 'Office' },
+      { id: 'Hotel', name: 'Hotel' },
+      { id: 'Villa', name: 'Villa' }
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+      function id(e) { return document.getElementById(e); }
+
+      // Mobile Menu Handler
+      const mobileToggleBtn = document.getElementById('mobile-toggle-btn');
+      const navMenu = id('nav-menu');
+      if (mobileToggleBtn && navMenu) {
+        mobileToggleBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          navMenu.classList.toggle('open');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+          link.addEventListener('click', () => navMenu.classList.remove('open'));
+        });
+      }
+
+      // Room Switcher
+      const roomContainer = id('room-tabs-container');
+      const roomGrid = id('room-showcase-grid');
+      if (roomContainer && roomGrid) {
+        roomContainer.innerHTML = STONEXA_ROOMS.map(r => `
+          <button class="room-tab-btn ${r.id==='all'?'active':''}" data-room="${r.id}">${r.name}</button>
+        `).join('');
+
+        function renderRooms(rm) {
+          const list = rm==='all' ? STONEXA_GALLERY.slice(0, 6) : STONEXA_GALLERY.filter(x => x.room === rm).slice(0, 6);
+          roomGrid.innerHTML = list.map(x => `
+            <div class="category-card" style="height:280px;" onclick="openLightboxById('${x.id}')">
+              <img src="${x.imageUrl}" alt="${x.title}" class="category-card-img" loading="lazy" referrerpolicy="no-referrer">
+              <div class="category-card-overlay"></div>
+              <div class="category-card-content">
+                <span class="category-tag">${x.room} • ${x.subCategory}</span>
+                <h3 class="category-title" style="font-size:1.2rem;">${x.title}</h3>
+              </div>
+            </div>
+          `).join('');
+        }
+        renderRooms('all');
+
+        roomContainer.querySelectorAll('.room-tab-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            roomContainer.querySelectorAll('.room-tab-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderRooms(btn.dataset.room);
+          });
+        });
+      }
+
+      // Gallery Grid & Filter
+      const galleryGrid = id('gallery-grid');
+      const filterBtns = document.querySelectorAll('.gallery-filter-bar .filter-btn');
+      let activeItems = STONEXA_GALLERY;
+      let currentIndex = 0;
+
+      function renderGallery(flt = 'all') {
+        if (!galleryGrid) return;
+        activeItems = flt === 'all' ? STONEXA_GALLERY : STONEXA_GALLERY.filter(x => x.category === flt);
+        galleryGrid.innerHTML = activeItems.map((item, idx) => `
+          <div class="gallery-item" onclick="openLightboxIndex(${idx})">
+            <img src="${item.imageUrl}" alt="${item.title}" loading="lazy" referrerpolicy="no-referrer">
+            <div class="gallery-item-overlay">
+              <h4 class="gallery-item-title">${item.title}</h4>
+            </div>
+          </div>
+        `).join('');
+      }
+      renderGallery('all');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          renderGallery(btn.dataset.filter);
+        });
+      });
+
+      // Lightbox Controls
+      const lightboxModal = id('lightbox-modal');
+      const lightboxImg = id('lightbox-img');
+      const lightboxTitle = id('lightbox-title');
+      const lightboxMeta = id('lightbox-meta');
+      const lightboxInquireBtn = id('lightbox-inquire-btn');
+
+      window.openLightboxIndex = function(idx) {
+        if (!activeItems[idx]) return;
+        currentIndex = idx;
+        const item = activeItems[currentIndex];
+        lightboxImg.src = item.imageUrl;
+        lightboxTitle.textContent = item.title;
+        lightboxMeta.textContent = `${item.subCategory} | Size: ${item.size}`;
+        lightboxInquireBtn.href = `https://api.whatsapp.com/send?phone=919876543210&text=${encodeURIComponent('Inquiry for ' + item.title)}`;
+        lightboxModal.classList.add('active');
+      };
+
+      window.openLightboxById = function(idStr) {
+        const idx = STONEXA_GALLERY.findIndex(x => x.id === idStr);
+        if (idx !== -1) { activeItems = STONEXA_GALLERY; openLightboxIndex(idx); }
+      };
+
+      const closeLightboxBtn = id('close-lightbox-btn');
+      if (closeLightboxBtn) closeLightboxBtn.addEventListener('click', () => lightboxModal.classList.remove('active'));
+
+      const prevBtn = id('prev-lightbox-btn');
+      if (prevBtn) prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + activeItems.length) % activeItems.length;
+        openLightboxIndex(currentIndex);
+      });
+
+      const nextBtn = id('next-lightbox-btn');
+      if (nextBtn) nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % activeItems.length;
+        openLightboxIndex(currentIndex);
+      });
+
+      // Inquiry Modal Controls
+      const inquiryModal = id('inquiry-modal');
+      document.querySelectorAll('.open-inquiry-modal').forEach(b => b.addEventListener('click', () => inquiryModal.classList.add('active')));
+      const closeInquiryBtn = id('close-inquiry-modal');
+      if (closeInquiryBtn) closeInquiryBtn.addEventListener('click', () => inquiryModal.classList.remove('active'));
+
+      const inquiryForm = id('direct-inquiry-form');
+      if (inquiryForm) {
+        inquiryForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = id('inquiry-name').value;
+          const phone = id('inquiry-phone').value;
+          const category = id('inquiry-category').value;
+          const msg = id('inquiry-msg').value;
+          const text = `Hello STONEXA Premium Tiles,\nName: ${name}\nPhone: ${phone}\nCategory: ${category}\nMessage: ${msg}`;
+          window.open(`https://api.whatsapp.com/send?phone=919876543210&text=${encodeURIComponent(text)}`, '_blank');
+          inquiryModal.classList.remove('active');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
